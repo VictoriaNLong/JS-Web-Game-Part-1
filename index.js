@@ -8,7 +8,7 @@ let newImage = (img, left, bottom) => { //defines the arguments that will be acc
     
     }
     
-    let newItem = (img, left, bottom) => {
+    let newItem = (img, left, bottom) => { 
     let item = document.createElement('img')
     item.src = img
     item.style.position = 'fixed'
@@ -16,7 +16,7 @@ let newImage = (img, left, bottom) => { //defines the arguments that will be acc
     item.style.bottom = bottom + 'px' 
     document.body.append(item)
     
-    item.addEventListener('dblclick', function(){
+    item.addEventListener('dblclick', function(){ //adds the function to remove the item when double clicked
         item.remove()
     })
     
